@@ -1,0 +1,23 @@
+.footer{
+    background-color: #6278F7;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer .social{
+    padding: 32px;
+}
+
+.footer .social img{
+    padding: 12px;
+}
+
+.footer .logo{
+    padding: 24px;
+}
+
+.footer .creditos h5{
+    font-size: 20px;
+    padding: 24px;
+    color: white;
+}
