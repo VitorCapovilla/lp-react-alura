@@ -7,16 +7,6 @@ import './Formularo.css'
 
 const Formulario = (props) =>{
 
-    const times =[
-        'Programação',
-        'Front-End',
-        'Data Science',
-        'Devops',
-        'UX & Design',
-        'Mobile',
-        'Inovação e Gestão'
-    ]
-
     const [nome, setNome]   = useState('')
     const [cargo, setCargo] = useState('')
     const [img, setImg]     = useState('')
@@ -30,6 +20,11 @@ const Formulario = (props) =>{
             img,
             time
         })
+
+        setNome('')
+        setCargo('')
+        setImg('')
+        setTime('')
     }
 
     return (
@@ -60,7 +55,7 @@ const Formulario = (props) =>{
                 <Select 
                     obrigatorio={true}
                     label="Time" 
-                    itens={times}
+                    itens={props.times}
                     valor={time}
                     aoAlterado={valor => setTime(valor)}
                 />
